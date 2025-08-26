@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome — Panchavarnam comforts</title>
+  <style>
+    :root{--bg1:#FFEEFD;--bg2:#FFF9E6;--card:#ffffff;--accent:#FF6B6B}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+    body{
+      background: linear-gradient(135deg,var(--bg1),var(--bg2));
+      display:flex;align-items:center;justify-content:center;padding:2rem;
+    }
+    .container{
+      max-width:900px;width:100%;background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85));
+      border-radius:18px;box-shadow:0 10px 30px rgba(20,20,60,0.08);padding:2.25rem;display:grid;grid-template-columns:1fr 320px;gap:1.5rem;align-items:center
+    }
+    h1{margin:0;font-size:2.25rem;letter-spacing:-0.5px;color:#222}
+    .subtitle{margin-top:.5rem;color:#555;font-size:1rem}
+    .quote{
+      margin-top:1.35rem;padding:1.25rem;border-radius:12px;background:linear-gradient(90deg, rgba(255,107,107,0.06), rgba(255,193,7,0.03));
+      font-size:1.05rem;color:#222;line-height:1.5;border:1px solid rgba(0,0,0,0.03)
+    }
+    .side{
+      display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1rem;border-radius:12px;background:linear-gradient(180deg,#fff,#fff);border:1px solid rgba(0,0,0,0.03)
+    }
+    .logo{width:80px;height:80px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#FFD166);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem}
+    .small{margin-top:.75rem;color:#666;text-align:center;font-size:.9rem}
+    .footer{margin-top:1.25rem;color:#888;font-size:.85rem;text-align:center}
+
+    @media (max-width:760px){
+      .container{grid-template-columns:1fr;}
+      .side{order:-1}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="pageTitle">
+    <section>
+      <h1 id="pageTitle">Welcome to <strong>Panchavarnam comforts</strong></h1>
+      <p class="subtitle">A small note to brighten your day — or at least try to.</p>
+
+      <div class="quote" aria-live="polite">
+        <p style="margin:0;font-weight:600">~Having a bad day? Hah!</p>
+        <p style="margin:.5rem 0 0 0">Don't worry — that is called Life. and you know what U survived, you're alive. <strong>Congratulations!</strong></p>
+        <p style="margin:.6rem 0 0 0;opacity:.9">......</p>
+      </div>
+
+      <p class="footer">Made with a pinch of warmth — Panchavarnam comforts.</p>
+    </section>
+
+    <aside class="side" aria-label="branding">
+      <div class="logo">PC</div>
+      <div class="small">Panchavarnam comforts</div>
+      <div style="margin-top:1rem;font-size:.9rem;color:#444;text-align:center"><strong>You know what is sadder than eating alone?</strong></div>
+	  <div style="margin-top:1rem;font-size:.9rem;color:#444;text-align:center"><strong>Not having money to eat</strong></div>
+	  <div style="margin-top:1rem;font-size:.9rem;color:#444;text-align:center">Ha ha! Not funny?</div>
+    </aside>
+  </main>
+</body>
+</html>
